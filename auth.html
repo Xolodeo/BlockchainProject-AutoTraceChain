@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вход | AutoTraceChain</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="background"></div>
+
+<div class="app-container">
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <img src="public/assets/img/logo.png" alt="AutoTraceChain" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="auth-container">
+        <h1 class="page-title">Добро пожаловать в AutoTraceChain</h1>
+        <p class="auth-description">Авторизуйтесь с помощью MetaMask, чтобы получить доступ ко всем функциям платформы</p>
+
+        <div class="auth-card">
+          <div class="metamask-icon-large">
+            <img
+              src="public/assets/img/metamask-icon%20(1).svg"
+              alt=""
+            ></div>
+          <h2>Подключить кошелек</h2>
+          <p>Используйте ваш MetaMask кошелек для входа в систему</p>
+          <button id="connect-metamask-btn" class="metamask-btn">
+            <div class="metamask-icon"></div>
+            <span id="metamask-btn-text">Подключить MetaMask</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AutoTraceChain. Все права защищены.</p>
+    </div>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script src="public/assets/js/script.js"></script>
+
+</body>
+</html>
