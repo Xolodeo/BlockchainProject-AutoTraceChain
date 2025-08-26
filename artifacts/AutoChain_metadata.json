@@ -1,0 +1,919 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dealId",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "fathername",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.FullName",
+								"name": "fullAcquirerName",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "series",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "number",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "where_issued",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "when_issued",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.Passport",
+								"name": "acquirerPassport",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "acquirerRegAddr",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.AcquirerProfile",
+						"name": "_acquirerProfile",
+						"type": "tuple"
+					}
+				],
+				"name": "AcquirerInfo",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dealId",
+						"type": "uint256"
+					}
+				],
+				"name": "AdDelete",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "CarHistory",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "fathername",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.FullName",
+								"name": "full_seller_name",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "series",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "number",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "where_issued",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "when_issued",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.Passport",
+								"name": "seller_passport",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "seller_reg_addr",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "model",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "release_year",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "car_id",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "color",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "sign_id",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "mileage",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "engine_volume",
+										"type": "uint256"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "car_number",
+												"type": "uint256"
+											},
+											{
+												"internalType": "string",
+												"name": "car_where_issued",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "car_when_issued",
+												"type": "string"
+											}
+										],
+										"internalType": "struct AutoChain.CarPassport",
+										"name": "car_passport",
+										"type": "tuple"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "reg_car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "reg_car_number",
+												"type": "uint256"
+											}
+										],
+										"internalType": "struct AutoChain.CarRegistration",
+										"name": "car_registration",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct AutoChain.CarInfo",
+								"name": "full_car_info",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "car_cost",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.Advert",
+						"name": "_advert",
+						"type": "tuple"
+					}
+				],
+				"name": "SellerInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "dateOfOperation",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "actionHappened",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isSigned",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct AutoChain.HistoryPiece",
+						"name": "_record",
+						"type": "tuple"
+					}
+				],
+				"name": "SetCarHistory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dealId",
+						"type": "uint256"
+					}
+				],
+				"name": "ShowAcquirerInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "fathername",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.FullName",
+								"name": "fullAcquirerName",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "series",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "number",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "where_issued",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "when_issued",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.Passport",
+								"name": "acquirerPassport",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "acquirerRegAddr",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.AcquirerProfile",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ShowAdvertInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "adId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "model",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "release_year",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "mileage",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "engine_volume",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "car_cost",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AutoChain.MainAd[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_advertIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "ShowSoloAdvertInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "model",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "release_year",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "car_id",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "color",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "sign_id",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "mileage",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "engine_volume",
+										"type": "uint256"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "car_number",
+												"type": "uint256"
+											},
+											{
+												"internalType": "string",
+												"name": "car_where_issued",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "car_when_issued",
+												"type": "string"
+											}
+										],
+										"internalType": "struct AutoChain.CarPassport",
+										"name": "car_passport",
+										"type": "tuple"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "reg_car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "reg_car_number",
+												"type": "uint256"
+											}
+										],
+										"internalType": "struct AutoChain.CarRegistration",
+										"name": "car_registration",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct AutoChain.CarInfo",
+								"name": "full_car_info",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "car_cost",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.DealDetails",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dealId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSeller",
+						"type": "bool"
+					}
+				],
+				"name": "SignCheck",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "Test",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_carCost",
+						"type": "uint256"
+					}
+				],
+				"name": "ToEthConverter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentEmptyId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "deals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "sellerAddress",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "fathername",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.FullName",
+								"name": "full_seller_name",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "series",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "number",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "where_issued",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "when_issued",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.Passport",
+								"name": "seller_passport",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "seller_reg_addr",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "model",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "release_year",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "car_id",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "color",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "sign_id",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "mileage",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "engine_volume",
+										"type": "uint256"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "car_number",
+												"type": "uint256"
+											},
+											{
+												"internalType": "string",
+												"name": "car_where_issued",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "car_when_issued",
+												"type": "string"
+											}
+										],
+										"internalType": "struct AutoChain.CarPassport",
+										"name": "car_passport",
+										"type": "tuple"
+									},
+									{
+										"components": [
+											{
+												"internalType": "uint256",
+												"name": "reg_car_series",
+												"type": "uint256"
+											},
+											{
+												"internalType": "uint256",
+												"name": "reg_car_number",
+												"type": "uint256"
+											}
+										],
+										"internalType": "struct AutoChain.CarRegistration",
+										"name": "car_registration",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct AutoChain.CarInfo",
+								"name": "full_car_info",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "car_cost",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.Advert",
+						"name": "advert",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "acquirerAddress",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "fathername",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.FullName",
+								"name": "fullAcquirerName",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "series",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "number",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "where_issued",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "when_issued",
+										"type": "string"
+									}
+								],
+								"internalType": "struct AutoChain.Passport",
+								"name": "acquirerPassport",
+								"type": "tuple"
+							},
+							{
+								"internalType": "string",
+								"name": "acquirerRegAddr",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AutoChain.AcquirerProfile",
+						"name": "profile",
+						"type": "tuple"
+					},
+					{
+						"internalType": "enum AutoChain.Dealstatus",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "sellerSigned",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "buyerSigned",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AutoChain.sol": "AutoChain"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"AutoChain.sol": {
+			"keccak256": "0x50331dc2f8f05988402436bd043b3cbdbc97e00b3de73ec97fa3fec55e79c7a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7886b916edeb99edcda310b4ea69b93c90b8d861d2d47deb72ae28af566d3fb",
+				"dweb:/ipfs/QmczQaN4cYCsdVfGfKGz5ameP9nsGcjDYMu8LcknxjnXVP"
+			]
+		},
+		"PriceConverter.sol": {
+			"keccak256": "0x71b1e4b287ade6ea7f3dd6ff6527c66e9661ce471af1553ef93ff5ce34a64b32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://029e7c294e590e281119fff12c8d4113365b98613ab342c86892404ceefe6224",
+				"dweb:/ipfs/QmcGKTvdXW8YzQg6FQhcsECfzdioww2ieRmiSyrRFMGZ2G"
+			]
+		}
+	},
+	"version": 1
+}
